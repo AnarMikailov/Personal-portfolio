@@ -1,19 +1,15 @@
-import React from "react";
-import "./Sidebar.scss";
-import { Link, NavLink } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from 'react';
+import './Sidebar.scss';
+import { Link, NavLink } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faCode,
   faEnvelope,
   faHome,
   faUser,
   faUserSecret,
-} from "@fortawesome/free-solid-svg-icons";
-import {
-  faGithub,
-  faInstagram,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
+} from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 const Sidebar = () => {
   return (
     <div className="nav-bar">
@@ -74,13 +70,18 @@ const Sidebar = () => {
         <li>
           <a
             target="_blank"
+            rel="noreferrer"
             href="https://www.linkedin.com/in/anar-mikayilov-10647a1a6"
           >
             <FontAwesomeIcon icon={faLinkedin} color="#ffd43b" />
           </a>
         </li>
         <li>
-          <a target="_blank" href="https://github.com/AnarMikailov">
+          <a
+            rel="noreferrer"
+            target="_blank"
+            href="https://github.com/AnarMikailov"
+          >
             <FontAwesomeIcon icon={faGithub} color="#ffd43b" />
           </a>
         </li>
