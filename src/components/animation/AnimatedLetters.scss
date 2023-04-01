@@ -1,0 +1,64 @@
+$bg-main: linear-gradient(180deg, #1f1c18 50%, #8e0e00 100%);
+$color-primary: #ffd43b;
+$color-secondary: #fff3bf;
+$color-btn-text: #1f1c18;
+$color-bg-hover: #8e0e00;
+$font-primary: 'Saira Condensed', sans-serif;
+$font-secondary: sans-serif;
+@import 'animate.css';
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 10%;
+  height: 30vh;
+  z-index: 100;
+
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 75%,
+    rgba(255, 255, 255, 0.9) 80%,
+    rgba(255, 255, 255, 0.25) 95%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.text {
+  width: 200px;
+  font-family: $font-primary;
+  color: #ffd43b;
+  font-size: 80px;
+  font-weight: 700;
+  display: inline-flex;
+  position: absolute;
+  bottom: 60vh;
+  left: 10%;
+  user-select: none;
+  animation: backInUp 0.5s 0.7s backwards;
+  .wrapper {
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 4px;
+    animation: bounce 0.7s 0.9s backwards;
+    .letter {
+      transition: ease-out 1s;
+      transform: translateY(35%);
+    }
+    .shadow {
+      transform: scale(1, -1);
+      color: #fff3bf;
+      opacity: 0.1;
+      transition: ease-in 1s, ease-out 1s;
+    }
+    &:hover {
+      .letter {
+        transform: translateY(15%);
+      }
+      .shadow {
+        opacity: 0;
+        transform: translateY(20%);
+      }
+    }
+  }
+}
