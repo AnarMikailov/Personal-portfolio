@@ -7,12 +7,12 @@ $font-primary: 'Saira Condensed', sans-serif;
 $font-secondary: sans-serif;
 @import 'animate.css';
 .overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 10%;
-  height: 30vh;
-  z-index: 100;
+  // position: absolute;
+  // bottom: 0;
+  // left: 0;
+  // width: 10%;
+  // height: 30vh;
+  // z-index: 100;
 
   background: rgb(255, 255, 255);
   background: linear-gradient(
@@ -25,21 +25,22 @@ $font-secondary: sans-serif;
 }
 
 .text {
+  margin-bottom: -10rem;
+  margin-left: 13rem;
   width: 200px;
   font-family: $font-primary;
   color: #ffd43b;
   font-size: 80px;
   font-weight: 700;
-  display: inline-flex;
-  position: absolute;
-  bottom: 60vh;
-  left: 10%;
+  display: flex;
   user-select: none;
   animation: backInUp 0.5s 0.7s backwards;
   .wrapper {
+    // &:nth-child(1) {
+    //   color: #fff3bf;
+    // }
     padding-left: 4px;
     padding-right: 4px;
-    padding-top: 4px;
     animation: bounce 0.7s 0.9s backwards;
     .letter {
       transition: ease-out 1s;
@@ -60,5 +61,17 @@ $font-secondary: sans-serif;
         transform: translateY(20%);
       }
     }
+  }
+}
+@media screen and (max-width: 1330px) {
+  .text {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .text {
+    margin-left: -10rem;
+    margin-bottom: 5rem;
   }
 }

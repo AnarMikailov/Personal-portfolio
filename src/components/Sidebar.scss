@@ -3,140 +3,147 @@ $color-primary: #ffd43b;
 $color-secondary: #fff3bf;
 $color-btn-text: #1f1c18;
 $color-bg-hover: #8e0e00;
-$font-primary: "Saira Condensed", sans-serif;
+$font-primary: 'Saira Condensed', sans-serif;
 $font-secondary: sans-serif;
 
 .nav-bar {
-  background-color: $color-btn-text;
-  width: 5%;
-  height: 100vh;
+  background: #1f1c18;
+  width: 60px;
+  height: 100%;
   position: absolute;
   top: 0;
   z-index: 3;
   min-height: 500px;
-}
-.logo {
-  display: block;
-  padding: 8px 0;
-  color: #ffd43b;
-  width: 60px;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-  top: 3%;
-  &:hover {
-    color: #fff3bf;
-  }
-}
 
-nav {
-  display: block;
-  text-align: center;
-  position: absolute;
-  height: 210px;
-  top: 45%;
-  margin-top: -120px;
-  width: 100%;
-
-  a {
-    font-size: 22px;
-    color: #4d4d4e;
+  .logo {
     display: block;
-    line-height: 51px;
-    height: 51px;
-    position: relative;
-    text-decoration: none;
-    margin-bottom: 1.6rem;
+    padding: 8px 0;
 
-    i {
-      transition: all 0.3s ease-out;
-    }
-
-    &:hover {
-      color: #ffd700;
-
-      svg {
-        opacity: 0;
-      }
-
-      &:after {
-        opacity: 1;
-      }
-    }
-
-    &:after {
-      content: "";
-      font-size: 9px;
-      letter-spacing: 2px;
-      position: absolute;
-      bottom: 0;
+    img {
       display: block;
-      width: 100%;
-      text-align: center;
-      opacity: 0;
-      -webkit-transition: all 0.3s ease-out;
-      transition: all 0.3s ease-out;
-    }
+      margin: 8px auto;
+      width: 54px;
+      height: auto;
 
-    &:first-child {
-      &:after {
-        content: "HOME";
+      &.sub-logo {
+        width: 50px;
       }
     }
   }
 
-  a.about-link {
-    &:after {
-      content: "ABOUT";
-    }
-  }
+  nav {
+    display: block;
+    text-align: center;
+    position: absolute;
+    height: 210px;
+    top: 50%;
+    margin-top: -120px;
+    width: 100%;
 
-  a.contact-link {
-    &:after {
-      content: "CONTACT";
-    }
-  }
-  a.skills-link {
-    &:after {
-      content: "SKILLS";
-    }
-  }
-
-  a.project-link {
-    &:after {
-      content: "Projects";
-    }
-  }
-
-  a.active {
-    svg {
-      color: #ffd43b;
-    }
-  }
-}
-
-ul {
-  position: absolute;
-  bottom: 20px;
-  width: 100%;
-  display: block;
-  padding: 0;
-  list-style: none;
-  text-align: center;
-  margin: 0;
-
-  li {
     a {
-      padding: 7px 0;
-      display: block;
-      font-size: 15px;
-      line-height: 16px;
+      font-size: 22px;
       color: #4d4d4e;
+      display: block;
+      line-height: 51px;
+      height: 51px;
+      position: relative;
+      text-decoration: none;
+
+      i {
+        transition: all 0.3s ease-out;
+      }
+
+      &:hover {
+        color: #ffd43b;
+
+        svg {
+          opacity: 0;
+        }
+
+        &:after {
+          opacity: 1;
+        }
+      }
+
+      &:after {
+        content: '';
+        font-size: 9px;
+        letter-spacing: 2px;
+        position: absolute;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        text-align: center;
+        opacity: 0;
+        -webkit-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+      }
+
+      &:first-child {
+        &:after {
+          content: ' HOME ';
+        }
+      }
     }
 
-    &:hover {
-      .anchor-icon {
-        color: #ffd700;
+    a.about-link {
+      &:after {
+        content: ' ABOUT ';
+      }
+    }
+    a.skills-link {
+      &:after {
+        content: 'SKILLS';
+      }
+    }
+    a.project-link {
+      &:after {
+        content: 'PROJECTS';
+      }
+    }
+
+    a.contact-link {
+      &:after {
+        content: 'CONTACT';
+      }
+    }
+
+    a.portfolio-link {
+      &:after {
+        content: 'PORTFOLIO';
+      }
+    }
+
+    a.active {
+      svg {
+        color: #ffd43b;
+      }
+    }
+  }
+
+  ul {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: block;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+
+    li {
+      a {
+        padding: 7px 0;
+        display: block;
+        font-size: 15px;
+        line-height: 16px;
+        color: #4d4d4e;
+      }
+
+      &:hover {
+        .anchor-icon {
+          color: #ffd43b;
+        }
       }
     }
   }
@@ -147,13 +154,15 @@ ul {
   display: none;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1024px) {
   .nav-bar {
     background: transparent;
     position: initial;
-    height: auto;
     min-height: auto;
 
+    .nav-logo {
+      display: none !important;
+    }
     ul,
     nav {
       display: none;
@@ -174,16 +183,26 @@ ul {
       }
 
       a {
+        font-size: 4rem;
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 3rem;
+        margin: 2rem;
+        &:nth-child(4) {
+          margin-left: 7rem;
+        }
+        &:nth-child(5) {
+          margin-left: 6.8rem;
+        }
       }
 
       a:after {
         opacity: 1;
         position: initial;
         width: auto;
-        margin-left: 10px;
+        margin-left: 5rem;
+        font-size: 3rem;
       }
 
       a svg {
@@ -197,20 +216,6 @@ ul {
       top: 15px;
       right: 15px;
       display: block;
-    }
-  }
-}
-.connections {
-  //   display: flex;
-  //   justify-content: space-around;
-  //   align-items: center;
-
-  li {
-    svg {
-      font-size: 2rem;
-      &:hover {
-        color: #fff3bf;
-      }
     }
   }
 }

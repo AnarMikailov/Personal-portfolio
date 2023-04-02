@@ -1,14 +1,21 @@
 import './App.scss';
 import { Route, Routes } from 'react-router-dom';
-import Layout from './components/Layout/Layout';
-import AnimatedLetters from './components/animation/AnimatedLetters';
-
+// import AnimatedLetters from './components/animation/AnimatedLetters';
+import About from './pages/About';
+import Skills from './pages/Skills';
+import Projects from './pages/Projects';
+import Contacts from './pages/Contacts';
+import Home from './pages/Home';
 function App() {
   return (
     <>
-      <AnimatedLetters text="HI, I'm Anar web developer." />
       <Routes>
-        <Route path="/" element={<Layout />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contacts />} />
       </Routes>
     </>
   );

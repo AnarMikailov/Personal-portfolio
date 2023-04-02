@@ -1,39 +1,39 @@
-import React from 'react';
 import './Sidebar.scss';
-import { Link, NavLink } from 'react-router-dom';
+import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import {
+  faBars,
+  faClose,
   faCode,
-  faEnvelope,
   faHome,
   faUser,
   faUserSecret,
+  faEnvelope,
 } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { Link, NavLink } from 'react-router-dom';
+
 const Sidebar = () => {
+  const [showNav, setShowNav] = useState(false);
+
   return (
     <div className="nav-bar">
-      <Link className="logo" to="/">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.5}
-          stroke="currentColor"
-          className="logo"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z"
-          />
-        </svg>
+      <Link className="logo" to="/" onClick={() => setShowNav(false)}>
+        <img
+          className="nav-logo"
+          src={require('../data/Avatar-fotor-bg-remover-2023040120500.png')}
+          height="60px"
+          width="60px"
+          alt="Anar"
+        />
       </Link>
-      <nav>
-        <NavLink activeclassname="active" exact="true" to="/">
+
+      <nav className={showNav ? 'mobile-show' : ''}>
+        <NavLink activeclassname="active" exact="true" to="/home">
           <FontAwesomeIcon icon={faHome} color="#ffd43b" />
         </NavLink>
         <NavLink
+          onClick={() => setShowNav(false)}
           activeclassname="active"
           className="about-link"
           exact="true"
@@ -42,29 +42,36 @@ const Sidebar = () => {
           <FontAwesomeIcon icon={faUser} color="#ffd43b" />
         </NavLink>
         <NavLink
+          onClick={() => setShowNav(false)}
           activeclassname="active"
           className="skills-link"
-          exact="true"
           to="/skills"
         >
           <FontAwesomeIcon icon={faUserSecret} color="#ffd43b" />
         </NavLink>
         <NavLink
+          onClick={() => setShowNav(false)}
           activeclassname="active"
           className="project-link"
-          exact="true"
           to="/projects"
         >
           <FontAwesomeIcon icon={faCode} color="#ffd43b" />
         </NavLink>
         <NavLink
+          onClick={() => setShowNav(false)}
           activeclassname="active"
           className="contact-link"
-          exact="true"
           to="/contact"
         >
           <FontAwesomeIcon icon={faEnvelope} color="#ffd43b" />
         </NavLink>
+        <FontAwesomeIcon
+          onClick={() => setShowNav(false)}
+          icon={faClose}
+          color="#ffd700"
+          size="3x"
+          className="close-icon"
+        />
       </nav>
       <ul className="connections">
         <li>
@@ -86,6 +93,13 @@ const Sidebar = () => {
           </a>
         </li>
       </ul>
+      <FontAwesomeIcon
+        onClick={() => setShowNav(true)}
+        icon={faBars}
+        color="#ffd700"
+        size="3x"
+        className="hamburger-icon"
+      />
     </div>
   );
 };
