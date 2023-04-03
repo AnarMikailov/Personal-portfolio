@@ -26,8 +26,8 @@ $time-4: 200s;
 .page-bg,
 .animation-wrapper {
   position: absolute;
-  left: 60%;
-  //   transform: translateX(-50%);
+  left: 40%;
+  transform: translateX(-50%);
   animation: fadeIn 1s 1.1s backwards;
 }
 
@@ -45,7 +45,7 @@ $time-4: 200s;
 
 .particle:after {
   position: absolute;
-  content: "";
+  content: '';
   top: $spacing;
 }
 
@@ -89,6 +89,13 @@ $time-4: 200s;
   color: #fff;
   z-index: 2;
 }
+
+@media screen and (max-width: 1530px) {
+  .animation-wrapper {
+    left: 60%;
+  }
+}
+
 @media screen and (max-width: 1050px) {
   .animation-wrapper {
     left: 0%;
