@@ -9,6 +9,11 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+@media screen and (max-width: 720px) {
+  body {
+    overflow-y: visible;
+  }
 }

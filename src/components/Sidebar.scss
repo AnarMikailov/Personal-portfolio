@@ -3,7 +3,7 @@ $color-primary: #ffd43b;
 $color-secondary: #fff3bf;
 $color-btn-text: #1f1c18;
 $color-bg-hover: #8e0e00;
-$font-primary: 'Saira Condensed', sans-serif;
+$font-primary: "Saira Condensed", sans-serif;
 $font-secondary: sans-serif;
 
 .nav-bar {
@@ -66,7 +66,7 @@ $font-secondary: sans-serif;
       }
 
       &:after {
-        content: '';
+        content: "";
         font-size: 9px;
         letter-spacing: 2px;
         position: absolute;
@@ -81,36 +81,36 @@ $font-secondary: sans-serif;
 
       &:first-child {
         &:after {
-          content: ' HOME ';
+          content: " HOME ";
         }
       }
     }
 
     a.about-link {
       &:after {
-        content: ' ABOUT ';
+        content: " ABOUT ";
       }
     }
     a.skills-link {
       &:after {
-        content: 'SKILLS';
+        content: "SKILLS";
       }
     }
     a.project-link {
       &:after {
-        content: 'PROJECTS';
+        content: "PROJECTS";
       }
     }
 
     a.contact-link {
       &:after {
-        content: 'CONTACT';
+        content: "CONTACT";
       }
     }
 
     a.portfolio-link {
       &:after {
-        content: 'PORTFOLIO';
+        content: "PORTFOLIO";
       }
     }
 
@@ -217,5 +217,10 @@ $font-secondary: sans-serif;
       right: 15px;
       display: block;
     }
+  }
+}
+@media screen and (max-width: 700px) {
+  nav {
+    overflow-y: scroll;
   }
 }

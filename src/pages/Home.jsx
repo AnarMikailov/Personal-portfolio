@@ -1,15 +1,15 @@
-import React from 'react';
-import AnimatedLetters from '../components/animation/AnimatedLetters';
-import Sidebar from '../components/Sidebar';
-import { Link } from 'react-router-dom';
-import './Home.scss';
+import React from "react";
+import AnimatedLetters from "../components/animation/AnimatedLetters";
+import Sidebar from "../components/Sidebar";
+import { Link } from "react-router-dom";
+import "./Home.scss";
 const Home = () => {
   return (
     <>
       <Sidebar />
       <div className="home-page ">
         <div className="home__page-header">
-          <div>
+          <div className="home__page-letters_container">
             <AnimatedLetters text="Hi, I'm Anar" />
             <div className="home__page-web">
               <AnimatedLetters text="Web developer. " />
@@ -18,7 +18,7 @@ const Home = () => {
 
           <div className="home__page-image_container">
             <img
-              src={require('../data/Avatar-fotor-bg-remover-2023040120500.png')}
+              src={require("../data/Avatar-fotor-bg-remover-2023040120500.png")}
               alt="planet"
             />
           </div>

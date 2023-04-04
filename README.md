@@ -68,3 +68,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## About
+
+Men qarsisina qoydugu her bir hedef ucun dayanmadan calisan aydin hedefleri ve bu hedeflere catmaq ucun yol xeritesi olan Calisqan ve oyrenmeye hevesli biriyem.Programlaşdırmaya uşaqlıqdan həvəsim var və həyatımı bir gün belə kod yazmadan təsəvvür edə bilmirəm Mənim əsas həyat devizim work hard in silence let your succes make the noise
+
+Mən qarşısına qoyduğu hər bir məqsəd üçün dayanmadan çalışan aydın hədəfləri olan və bu hədəflərə çatmaq üçün yol xəritəsi olan Çalışqan və öyrənməyə həvəsli biriyəm
