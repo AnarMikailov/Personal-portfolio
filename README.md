@@ -74,3 +74,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 Men qarsisina qoydugu her bir hedef ucun dayanmadan calisan aydin hedefleri ve bu hedeflere catmaq ucun yol xeritesi olan Calisqan ve oyrenmeye hevesli biriyem.Programlaşdırmaya uşaqlıqdan həvəsim var və həyatımı bir gün belə kod yazmadan təsəvvür edə bilmirəm Mənim əsas həyat devizim work hard in silence let your succes make the noise
 
 Mən qarşısına qoyduğu hər bir məqsəd üçün dayanmadan çalışan aydın hədəfləri olan və bu hədəflərə çatmaq üçün yol xəritəsi olan Çalışqan və öyrənməyə həvəsli biriyəm
+
+Men boyuk meqsedleri olan meqsedleri ucun dayanmadan calisan yenilikleri seven ve onlara tez adaptasiya olan
+calisqan isini severek goren ve her daim ozunu inkisaf etdiren biriyem. Isimde mehsuliyyetli ve deqiq olmaga onem verirem Qarisimdakindanda bunu teleb edirem Bu saheye usaqliqdan maragim olub
+
+Mən böyük məqsədləri olan məqsədləri üçün dayanmadan çalışan yenilikləri sevən onlara tez adaptasiya olan çalışqan işini sevərək görən və hər zaman özünü inkişaf etdirən biriyəm İşimdə məhsuliyyətli və dəqiq olmağa
+önəm verirəm Qarşımdakından da bunu tələb edirəm.

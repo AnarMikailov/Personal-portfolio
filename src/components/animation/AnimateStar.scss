@@ -26,7 +26,7 @@ $time-4: 200s;
 .page-bg,
 .animation-wrapper {
   position: absolute;
-  left: 40%;
+  // left: 40%;
   transform: translateX(-50%);
   animation: fadeIn 1s 1.1s backwards;
 }
@@ -45,7 +45,7 @@ $time-4: 200s;
 
 .particle:after {
   position: absolute;
-  content: '';
+  content: "";
   top: $spacing;
 }
 
