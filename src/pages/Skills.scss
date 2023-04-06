@@ -1,8 +1,16 @@
 .container-skill {
   display: flex;
   justify-content: center;
-  gap: 1rem;
-  //   animation: fadeIn 1s 1.7s backwards;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 8rem;
+  animation: fadeIn 1s 1.7s backwards;
   //   overflow-y: scroll !important;
+}
+.skillbar-container {
+  flex-wrap: wrap;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
