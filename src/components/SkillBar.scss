@@ -1,0 +1,82 @@
+// .container {
+//   height: 300px;
+//   width: 300px;
+
+//   background-color: yellow;
+
+//   border-radius: 8px;
+//   display: grid;
+//   place-items: center;
+// }
+// .circular-progress {
+//   position: relative;
+//   height: 150px;
+//   width: 150px;
+//   background-color: red;
+//   border-radius: 50%;
+//   display: grid;
+//   place-items: center;
+// }
+// .circular-progress::before {
+//   content: "";
+//   position: absolute;
+//   height: 80%;
+//   width: 80%;
+//   background-color: aqua;
+//   border-radius: 50%;
+// }
+// .value-container {
+//   position: relative;
+//   font-size: 35px;
+// }
+// .skill-text {
+//   font-size: 34px;
+// }
+.skill {
+  height: 160px;
+  width: 160px;
+  position: relative;
+
+  .outler {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    border: 1px solid red;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+      -6px -6px 10px -5px rgba(206, 11, 11, 0.7);
+
+    .inner {
+      height: 120px;
+      display: grid;
+      place-items: center;
+      width: 120px;
+      border-radius: 50%;
+      border: 1px solid red;
+      box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+        inset -4px -4px 6px -1px rgba(196, 11, 11, 0.7),
+        -0.5px -0.5px 0px rgba(206, 11, 11, 0.7),
+        0.5px 0.5px 0px rgba(0, 0, 0, 0.15);
+    }
+  }
+}
+#number {
+  font-weight: 600;
+  color: white;
+  font-size: 24px;
+}
+circle {
+  fill: none;
+  stroke: #ffd43b;
+  stroke-width: 10px;
+  stroke-dasharray: 472;
+  // stroke-dashoffset: 472;
+  animation: anim 2s linear forwards;
+  // animation: stroke 13.5s steps(500) forwards;
+}
+.skill-svg {
+  transform: rotate(270deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
