@@ -4,8 +4,8 @@ html {
 
 body {
   display: block;
-  overflow-y: hidden;
   margin: 0;
+  /* overflow: hidden; */
 }
 
 code {

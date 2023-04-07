@@ -7,6 +7,7 @@ $font-primary: "Saira Condensed", sans-serif;
 $font-secondary: sans-serif;
 
 .home-page {
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
