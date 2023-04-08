@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from "react";
-import AnimatedLetters from "../components/animation/AnimatedLetters";
-import Sidebar from "../components/Sidebar";
-import SkillBar from "../components/SkillBar";
-import "./Skills.scss";
+import React, { useState, useEffect } from 'react';
+import AnimatedLetters from '../components/animation/AnimatedLetters';
+import Sidebar from '../components/Sidebar';
+import SkillBar from '../components/SkillBar';
+import './Skills.scss';
+import HoverSkill from '../components/animation/HoverSkill';
 const Skills = () => {
   return (
     <div>
@@ -20,24 +21,23 @@ const Skills = () => {
           <SkillBar skillText="Tailwind CSS" value={30} />
           <SkillBar skillText="Next.js" value={40} />
         </div>
-        <h2 className="skills-text">
-          As a front-end developer, I am proficient in using Bootstrap for
-          building responsive and mobile-first web applications. I have
-          extensive experience in using npm for package management and
-          development workflows, and I am skilled in using Git for version
-          control and collaborative development. I am knowledgeable in using
-          Context API for managing global state in React applications, and I am
-          familiar with Redux for advanced state management in complex
-          applications. I have also implemented React Hooks for reusable logic
-          and code organization. I am proficient in using Router v6 for
-          navigation and routing in React applications, and I have experience in
-          applying design patterns for writing maintainable and scalable code. I
-          am also knowledgeable in using BEM methodology for writing modular and
-          reusable CSS. Additionally, I am familiar with SEO best practices for
-          optimizing web pages for search engines, and I have experience in
-          using CSS pre-processors like Sass for writing efficient and
-          maintainable stylesheets.
-        </h2>
+        <HoverSkill />
+        {/* <div className="skill__text-container">
+          <h2 className="skills-text">
+            As a front-end developer, I'm skilled in Bootstrap for responsive
+            and mobile-first web app development. I have experience in using npm
+            for package management, Git for version control, and Context API for
+            global state management in React. I also have experience with Redux
+            for advanced state management and React Hooks for reusable logic.
+          </h2>
+          <h2 className="skills-text">
+            I'm proficient in Router v6 for navigation, design patterns for
+            maintainable code, and BEM for modular CSS. Additionally, I'm
+            familiar with SEO best practices, CSS pre-processors like Sass, and
+            writing efficient stylesheets. Also I familiar with deploying web
+            applications to Vercel and Netlify
+          </h2>
+        </div> */}
       </div>
     </div>
   );

@@ -1,10 +1,9 @@
-$font-primary: "Saira Condensed", sans-serif;
+$font-primary: 'Saira Condensed', sans-serif;
 .about-page {
   height: 100vh;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  overflow: hidden;
 }
 
 .about-container {
@@ -23,6 +22,7 @@ $font-primary: "Saira Condensed", sans-serif;
 }
 
 .about__page-description {
+  overflow: hidden !important;
   display: flex;
   transform: translateX(90px);
   p {

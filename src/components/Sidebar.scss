@@ -3,15 +3,16 @@ $color-primary: #ffd43b;
 $color-secondary: #fff3bf;
 $color-btn-text: #1f1c18;
 $color-bg-hover: #8e0e00;
-$font-primary: "Saira Condensed", sans-serif;
+$font-primary: 'Saira Condensed', sans-serif;
 $font-secondary: sans-serif;
 
 .nav-bar {
   background: #1f1c18;
-  width: 60px;
+  width: 70px;
   height: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
+
   z-index: 3;
   min-height: 500px;
 
@@ -66,7 +67,7 @@ $font-secondary: sans-serif;
       }
 
       &:after {
-        content: "";
+        content: '';
         font-size: 9px;
         letter-spacing: 2px;
         position: absolute;
@@ -81,36 +82,36 @@ $font-secondary: sans-serif;
 
       &:first-child {
         &:after {
-          content: " HOME ";
+          content: ' HOME ';
         }
       }
     }
 
     a.about-link {
       &:after {
-        content: " ABOUT ";
+        content: ' ABOUT ';
       }
     }
     a.skills-link {
       &:after {
-        content: "SKILLS";
+        content: 'SKILLS';
       }
     }
     a.project-link {
       &:after {
-        content: "PROJECTS";
+        content: 'PROJECTS';
       }
     }
 
     a.contact-link {
       &:after {
-        content: "CONTACT";
+        content: 'CONTACT';
       }
     }
 
     a.portfolio-link {
       &:after {
-        content: "PORTFOLIO";
+        content: 'PORTFOLIO';
       }
     }
 
@@ -156,8 +157,9 @@ $font-secondary: sans-serif;
 
 @media screen and (max-width: 1024px) {
   .nav-bar {
+    left: 90%;
     background: transparent;
-    position: initial;
+    position: sticky;
     min-height: auto;
 
     .nav-logo {

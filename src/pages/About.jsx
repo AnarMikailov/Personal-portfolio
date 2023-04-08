@@ -1,9 +1,9 @@
-import React, { useEffect } from "react";
-import Sidebar from "../components/Sidebar";
-import "./About.scss";
-import AnimatedLetters from "../components/animation/AnimatedLetters";
-import AnimateReact from "../components/animation/AnimateReact";
-import AnimateStar from "../components/animation/AnimateStar";
+import React, { useEffect } from 'react';
+import Sidebar from '../components/Sidebar';
+import './About.scss';
+import AnimatedLetters from '../components/animation/AnimatedLetters';
+import AnimateReact from '../components/animation/AnimateReact';
+import AnimateStar from '../components/animation/AnimateStar';
 const About = () => {
   return (
     <div>

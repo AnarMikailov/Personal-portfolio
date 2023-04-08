@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
-import "./SkillBar.scss";
+import React, { useEffect, useState } from 'react';
+import './SkillBar.scss';
 const SkillBar = ({ value, skillText }) => {
   const [percent, setPercent] = useState(0);
   let progressEndValue = value - 1;
   useEffect(() => {
     const interval = setInterval(() => {
-      setPercent((percent) => {
+      setPercent(percent => {
         if (percent === progressEndValue) {
           clearInterval(interval);
         }

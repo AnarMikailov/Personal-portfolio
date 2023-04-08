@@ -3,7 +3,7 @@ $color-primary: #ffd43b;
 $color-secondary: #fff3bf;
 $color-btn-text: #1f1c18;
 $color-bg-hover: #8e0e00;
-$font-primary: "Saira Condensed", sans-serif;
+$font-primary: 'Saira Condensed', sans-serif;
 $font-secondary: sans-serif;
 
 .home-page {
@@ -14,9 +14,36 @@ $font-secondary: sans-serif;
   gap: 2rem;
   .home__page-link_container {
     align-self: center;
+    margin-bottom: 1rem;
     .home__page__link__container-wiggle {
       padding: 16.5px;
       animation: wiggle 3s linear infinite, backInUp 1s 1.1s backwards;
+
+      @keyframes wiggle {
+        0%,
+        7% {
+          transform: rotateZ(0);
+        }
+        15% {
+          transform: rotateZ(-15deg);
+        }
+        20% {
+          transform: rotateZ(10deg);
+        }
+        25% {
+          transform: rotateZ(-10deg);
+        }
+        30% {
+          transform: rotateZ(6deg);
+        }
+        35% {
+          transform: rotateZ(-4deg);
+        }
+        40%,
+        100% {
+          transform: rotateZ(0);
+        }
+      }
     }
     .home__page__link__container-resume {
       animation: backInUp 1.4s 1.5s backwards;

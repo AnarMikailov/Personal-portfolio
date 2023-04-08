@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   gap: 8rem;
-  animation: backInUp 0.5s 0.7s backwards;
+  animation: fadeIn 0.5s 0.7s backwards;
 }
 .skillbar-container {
   gap: 4rem;
@@ -18,12 +18,12 @@
 
 .skills-text {
   padding: 0 20rem;
-  font-family: "Saira Condensed", sans-serif;
+  font-family: 'Saira Condensed', sans-serif;
   font-weight: 400;
   font-size: 21px;
   color: #fff3bf;
   align-self: center;
-  animation: backInUp 1.2s 1.4s backwards;
+  // animation: backInUp 1.2s 1.4s backwards;
 }
 
 @media screen and (max-width: 1024px) {
