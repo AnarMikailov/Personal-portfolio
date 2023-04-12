@@ -1,8 +1,7 @@
-import React from 'react';
-import './AnimatedLetters.scss';
+import React from "react";
+import "./AnimatedLetters.scss";
 const AnimatedLetters = ({ text }) => {
   const arr = [...text];
-  console.log(arr);
   return (
     <>
       <div className="text">

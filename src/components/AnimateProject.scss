@@ -67,15 +67,16 @@ $font-secondary: sans-serif;
 }
 .project-img {
   width: 100%;
-  height: auto;
+  height: 200px;
 }
 .project-text {
-  padding: 2rem;
+  padding: 0 2rem;
   font-size: 18px;
   text-align: left;
   font-family: Saira Condensed;
 }
 .btn {
+  text-decoration: none;
   display: inline-block;
   cursor: pointer;
   margin: 2rem;
@@ -94,9 +95,86 @@ $font-secondary: sans-serif;
   }
 }
 .project-title {
-  margin: 1rem;
+  margin-top: 1rem;
   font-size: 20px;
   font-weight: 700;
 }
-.project-button {
+
+@media screen and (max-width: 1390px) {
+  .project-animation {
+    width: 320px;
+    height: 600px;
+  }
+
+  .project-title {
+    margin: 1rem;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .project-text {
+    padding: 0 2rem;
+    font-size: 16px;
+  }
+  .btn {
+    margin: 1.6rem;
+    font-weight: 700;
+    padding: 12px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .project-animation {
+    width: 300px;
+    height: 570px;
+  }
+
+  .project-title {
+    margin: 1rem;
+    font-size: 17px;
+    font-weight: 600;
+  }
+
+  .project-text {
+    padding: 0 1.6rem;
+    font-size: 15px;
+  }
+  .btn {
+    margin: 1.4rem;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 11px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .project-animation {
+    width: 280px;
+    height: 520px;
+  }
+
+  .project-title {
+    margin: 0.6rem;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .project-text {
+    padding: 0 1.6rem;
+    font-size: 14px;
+  }
+  .btn {
+    margin: 1rem;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 9px;
+  }
+}
+@media screen and (max-width: 325px) {
+  .project-img {
+    width: 100%;
+    height: 170px;
+  }
+  .project-animation {
+    width: 240px;
+    height: 520px;
+  }
 }
