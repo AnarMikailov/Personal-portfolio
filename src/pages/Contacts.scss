@@ -1,0 +1,45 @@
+.contact-page {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact__page-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+form {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.contact__page-subject_input {
+  align-self: stretch;
+}
+.contact__page-textarea {
+  align-self: stretch;
+  padding: 2rem;
+  background-color: #ffd43b;
+  font-size: 18px;
+}
+.contact__page-name_email_container {
+  width: 65rem;
+  display: flex;
+  gap: 1rem;
+}
+input {
+  width: 65rem;
+  background-color: #ffd43b;
+  padding: 1rem;
+  font-size: 20px;
+}
+.contact__page-submit {
+  align-self: flex-end;
+  font-size: 18px;
+}
