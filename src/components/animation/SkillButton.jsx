@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import './HoverSkill.scss';
-const HoverSkill = () => {
+import './SkillButton.scss';
+const SkillButton = () => {
   const [click, setClick] = useState(false);
   const handleClick = () => {
     setClick(click => !click);
@@ -48,4 +48,4 @@ const HoverSkill = () => {
   );
 };
 
-export default HoverSkill;
+export default SkillButton;

@@ -26,13 +26,7 @@ const SkillBar = ({ value, skillText }) => {
             <div id="number">{percent}%</div>
           </div>
         </div>
-        <svg
-          className="skill-svg"
-          xmlns="http://www.w3.org/2000/svg"
-          version="1.1"
-          width="160px"
-          height="160px"
-        >
+        <svg className="skill-svg" version="1.1" width="160px" height="160px">
           <defs>
             <linearGradient id="GradientColor"></linearGradient>
           </defs>
