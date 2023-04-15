@@ -1,9 +1,9 @@
-import React from "react";
-import AnimateProject from "../components/AnimateProject";
-import AnimatedLetters from "../components/animation/AnimatedLetters";
-import Sidebar from "../components/Sidebar";
-import project from "../data/data";
-import "./Projects.scss";
+import React from 'react';
+import AnimateProject from '../components/AnimateProject';
+import AnimatedLetters from '../components/animation/AnimatedLetters';
+import Sidebar from '../components/Sidebar';
+import project from '../data/data';
+import './Projects.scss';
 const Projects = () => {
   return (
     <>

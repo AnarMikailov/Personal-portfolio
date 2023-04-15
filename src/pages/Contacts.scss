@@ -32,8 +32,12 @@ form {
   width: 65rem;
   display: flex;
   gap: 1rem;
+  p {
+    color: #ffd43b;
+  }
 }
 input {
+  display: block;
   width: 65rem;
   background-color: #ffd43b;
   padding: 1rem;
@@ -42,4 +46,9 @@ input {
 .contact__page-submit {
   align-self: flex-end;
   font-size: 18px;
+}
+
+.invalid {
+  border-bottom: 7px solid #8e0e00;
+  animation: bounceIn 1s 1, 7s backwards;
 }
