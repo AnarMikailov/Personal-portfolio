@@ -56,10 +56,10 @@ const Contacts = () => {
     if (!formIsValid) return;
     emailjs
       .sendForm(
-        'service_352p1uw',
-        'template_43avcjj',
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
         form.current,
-        '55f9RlYY1VTStZR-p'
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
       )
       .then(
         result => {
