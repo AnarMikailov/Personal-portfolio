@@ -9,8 +9,6 @@ const Contacts = () => {
       <div className="contact-page">
         <AnimatedLetters text="Contact" />
         <div className="contact__page-form">
-          <h2 className="contact__page-title">Contact me</h2>
-
           <form>
             <div className="contact__page-name_email_container">
               <input
