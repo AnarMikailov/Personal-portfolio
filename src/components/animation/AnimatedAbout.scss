@@ -1,0 +1,106 @@
+.card {
+  margin-left: 24rem;
+  text-align: center;
+  width: 500px;
+  min-height: 300px;
+  background: #1f1c18a4;
+  box-shadow: 0 8px 32px 0 #ffd43b;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 1rem;
+  padding: 2rem;
+  // z-index: 0;
+}
+
+.subtitle {
+  font-family: "Saira Condensed", sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  color: #ffd43b;
+}
+
+@media screen and (max-width: 1024px) {
+  .card {
+    margin-left: 0rem;
+    text-align: center;
+    width: 550px;
+    min-height: 400px;
+    background: #1f1c18;
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 1rem;
+    padding: 2rem;
+    // z-index: 10;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    // width: min-content;
+    // width: 600px;
+    transform: translateX(15%);
+  }
+  .card {
+    margin-left: 0rem;
+    width: 550px;
+    min-height: 350px;
+    background: #1f1c18;
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border-radius: 1rem;
+    padding: 2rem;
+    z-index: -10;
+  }
+}
+@media screen and (max-width: 678px) {
+  .card {
+    margin-left: 0rem;
+    width: 350px;
+    min-height: 350px;
+  }
+  .subtitle {
+    font-family: "Saira Condensed", sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    color: #ffd43b;
+  }
+}
+@media screen and (max-width: 460px) {
+  .card {
+    margin-left: 0rem;
+    width: 280px;
+    min-height: 200px;
+  }
+  .subtitle {
+    font-family: "Saira Condensed", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #ffd43b;
+  }
+}
+@media screen and (max-width: 300px) {
+  .card {
+    width: 250px;
+  }
+  .subtitle {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .card {
+    margin-left: 35rem;
+    width: 780px;
+    min-height: 400px;
+  }
+
+  .subtitle {
+    font-family: "Saira Condensed", sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #ffd43b;
+  }
+}

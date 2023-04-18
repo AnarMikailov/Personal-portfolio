@@ -1,11 +1,14 @@
-import React from 'react';
-import './AnimateReact.scss';
+import React from "react";
+import "./AnimateReact.scss";
+import AnimateStar from "./AnimateStar";
 
 const AnimateReact = () => {
   return (
     <div>
-      <div className="wrapper">
-        <div className="obj"></div>
+      <div className="wrapper-react">
+        <div className="obj">
+          <AnimateStar />
+        </div>
         <svg
           className="react-svg"
           xmlns="http://www.w3.org/2000/svg"

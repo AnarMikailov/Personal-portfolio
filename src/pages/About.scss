@@ -1,92 +1,42 @@
-$font-primary: 'Saira Condensed', sans-serif;
-.about-page {
-  height: 100vh;
+$font-primary: "Saira Condensed", sans-serif;
+
+.cs {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
 
-.about-container {
-  margin-top: -10rem;
+.about__animate_container {
+  animation: fadeIn 1.2s 1.4s backwards;
+  gap: 20rem;
+  margin-right: 5rem;
+  // width: 170rem;
+  // margin-top: 5%;
+  padding-top: 10rem;
   display: flex;
-  justify-items: center;
-}
-.about_container-description {
-  margin: 0 3rem;
-  font-family: $font-primary;
-  font-weight: 300;
-  font-size: 22px;
-  color: #fff3bf;
-  align-self: center;
-  animation: backInUp 1.2s 1.4s backwards;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.about__page-description {
-  overflow: hidden !important;
-  display: flex;
-  transform: translateX(90px);
-  p {
-    padding-right: 20rem;
-  }
-  align-self: flex-start;
-  margin-top: 10rem;
-}
-
-@media screen and (max-width: 1180px) {
-  .about_container-description {
-    font-size: 20px;
-  }
-  .react-svg {
-    width: 37rem !important;
+@media screen and (min-width: 1400px) {
+  .about__animate_container {
+    gap: 30rem;
   }
 }
-
-@media screen and (max-width: 1020px) {
-  .about-container {
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: center;
-  }
-  .react-svg {
-    display: block;
-    width: 40rem !important;
-  }
-  .react-svg {
-    display: block;
-    width: 40rem !important;
-  }
-  .about__page-description {
-    transform: translateX(0);
-    p {
-      padding-right: 0;
-    }
-  }
-  .about_container-description {
-    font-weight: 500;
-  }
-}
-@media screen and (max-width: 760px) {
-  .react-svg {
-    width: 30rem !important;
-  }
-}
-@media screen and (max-width: 425px) {
-  .react-svg {
-    width: 30rem !important;
+@media screen and (max-width: 1024px) {
+  .about__animate_container {
+    flex-direction: column;
+    gap: 10rem;
   }
 
-  .about_container-description {
-    margin-top: 9rem;
-    font-size: 16px;
+  .about__animate_container {
+    gap: 20rem;
+    margin-right: 0rem;
   }
 }
-@media screen and (max-width: 300px) {
-  .react-svg {
-    width: 25rem !important;
-  }
-
-  .about_container-description {
-    margin-top: 9rem;
-    font-size: 14px;
+@media screen and (max-width: 768px) {
+  .about__animate_container {
+    flex-direction: column;
+    gap: 10rem;
   }
 }
