@@ -3,7 +3,7 @@ import AnimatedLetters from "../components/animation/AnimatedLetters";
 import Sidebar from "../components/Sidebar";
 import SkillBar from "../components/SkillBar";
 import "./Skills.scss";
-import HoverSkill from "../components/animation/HoverSkill";
+import ClickSkill from "../components/animation/ClickSkill";
 
 import RingLoader from "react-spinners/RingLoader";
 const Skills = () => {
@@ -41,12 +41,12 @@ const Skills = () => {
               <SkillBar skillText="CSS" value={75} />
               <SkillBar skillText="Javascript" value={65} />
               <SkillBar skillText="React" value={65} />
-              <SkillBar skillText="Sass" value={50} />
               <SkillBar skillText="Responsive design" value={60} />
-              <SkillBar skillText="Tailwind CSS" value={30} />
-              <SkillBar skillText="Next.js" value={40} />
+              <SkillBar skillText="Tailwind CSS" value={60} />
+              <SkillBar skillText="Next.js" value={60} />
+              <SkillBar skillText="Sass" value={50} />
             </div>
-            <HoverSkill />
+            <ClickSkill />
           </div>
         </>
       )}

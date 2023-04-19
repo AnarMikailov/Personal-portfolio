@@ -189,11 +189,7 @@ const Contacts = () => {
                     value={textValue}
                     onBlur={textInputBlurHandler}
                   ></textarea>
-                  <button
-                    // onClick={notify}
-                    className="btn contact__page-submit"
-                    type="submit"
-                  >
+                  <button className="btn contact__page-submit" type="submit">
                     Send
                   </button>
                   <ToastContainer
@@ -223,7 +219,7 @@ const Contacts = () => {
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                   />
                   <Marker position={position} icon={customIcon}>
-                    <Popup>Here i live</Popup>
+                    <Popup>My location</Popup>
                   </Marker>
                 </MapContainer>
               </div>

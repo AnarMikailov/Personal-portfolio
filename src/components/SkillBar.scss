@@ -1,3 +1,4 @@
+@import "./styles/colors.scss";
 .skill {
   height: 160px;
   width: 160px;
@@ -27,7 +28,7 @@
 }
 #number {
   font-weight: 600;
-  color: #fff3bf;
+  color: $color-secondary;
   font-size: 24px;
 }
 
@@ -38,7 +39,7 @@
   left: 0;
 }
 .skill-text {
-  color: #fff3bf;
+  color: $color-secondary;
 }
 
 .skill {

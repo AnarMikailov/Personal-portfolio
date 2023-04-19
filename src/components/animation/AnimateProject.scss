@@ -5,7 +5,7 @@ $color-btn-text: #1f1c18;
 $color-bg-hover: #8e0e00;
 $font-primary: "Saira Condensed", sans-serif;
 $font-secondary: sans-serif;
-
+@import "../styles/colors.scss";
 .project-animation {
   border-radius: 16px;
   display: flex;
@@ -14,9 +14,9 @@ $font-secondary: sans-serif;
   position: relative;
   width: 350px;
   height: 600px;
-  background: linear-gradient(0deg, #000, #1f1c18);
+  background: linear-gradient(0deg, #000, $color-btn-text);
   text-align: center;
-  color: #ffd43b;
+  color: $color-primary;
   transition: 0.1s all;
   &:hover {
     font-weight: 700;
@@ -32,16 +32,16 @@ $font-secondary: sans-serif;
   top: -2px;
   background: linear-gradient(
     45deg,
-    #1f1c18,
-    #8e0e00,
-    #fff3bf,
-    #ffd43b,
-    #1f1c18,
-    #8e0e00,
-    #fff3bf,
-    #ffd43b,
+    $color-btn-text,
+    $color-bg-hover,
+    $color-secondary,
+    $color-primary,
+    $color-btn-text,
+    $color-bg-hover,
+    $color-secondary,
+    $color-primary,
     #ffff00,
-    #8e0e00
+    $color-bg-hover
   );
   background-size: 400%;
   width: calc(100% + 4px);
@@ -92,7 +92,7 @@ $font-secondary: sans-serif;
   transition: 1s all;
   &:hover {
     background-color: $color-bg-hover;
-    color: #fff3bf;
+    color: $color-secondary;
   }
 }
 .project-title {

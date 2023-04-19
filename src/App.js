@@ -1,11 +1,11 @@
-import './App.scss';
-import { Route, Routes } from 'react-router-dom';
+import "./App.scss";
+import { Route, Routes } from "react-router-dom";
 // import AnimatedLetters from './components/animation/AnimatedLetters';
-import About from './pages/About';
-import Skills from './pages/Skills';
-import Projects from './pages/Projects';
-import Contacts from './pages/Contacts';
-import Home from './pages/Home';
+import About from "./pages/About";
+import Skills from "./pages/Skills";
+import Projects from "./pages/Projects";
+import Contacts from "./pages/Contacts";
+import Home from "./pages/Home";
 function App() {
   return (
     <>

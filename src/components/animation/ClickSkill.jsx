@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
-import './HoverSkill.scss';
+import React, { useState } from "react";
+import "./ClickSkill.scss";
 const HoverSkill = () => {
   const [click, setClick] = useState(false);
   const handleClick = () => {
-    setClick(click => !click);
+    setClick((click) => !click);
   };
   return (
     <div>
-      <div className={`all ${click && 'all-click'}`}>
+      <div className={`all ${click && "all-click"}`}>
         <div className="lefter">
           <div className="hover-text">Styles</div>
           <p className="text-box">Bootstrap</p>
@@ -24,7 +24,6 @@ const HoverSkill = () => {
         </div>
         <div onClick={handleClick} className="center">
           <div className="explainer">
-            {/* {click ? <span>salam</span> : <span>Click me</span>} */}
             <span>Click me</span>
           </div>
           <div className="hover-text">Frontend Development</div>

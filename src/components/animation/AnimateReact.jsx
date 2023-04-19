@@ -9,11 +9,7 @@ const AnimateReact = () => {
         <div className="obj">
           <AnimateStar />
         </div>
-        <svg
-          className="react-svg"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 288 288"
-        >
+        <svg className="react-svg" viewBox="0 0 288 288">
           <path
             id="#path"
             className="path "

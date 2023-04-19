@@ -9,7 +9,7 @@ const AnimateProject = ({ title, image, description, link, code }) => {
       <div className="project__img-container">
         <img
           className="project-img"
-          src={require(`../data/${image}.PNG`)}
+          src={require(`../../data/${image}.PNG`)}
           alt={`${image}`}
         />
       </div>

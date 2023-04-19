@@ -5,9 +5,9 @@ $color-btn-text: #1f1c18;
 $color-bg-hover: #8e0e00;
 $font-primary: "Saira Condensed", sans-serif;
 $font-secondary: sans-serif;
-
+@import "../components/styles//colors.scss";
 .nav-bar {
-  background: #1f1c18;
+  background: $color-btn-text;
   width: 70px;
   height: 100%;
   position: fixed;
@@ -55,7 +55,7 @@ $font-secondary: sans-serif;
       }
 
       &:hover {
-        color: #ffd43b;
+        color: $color-primary;
 
         svg {
           opacity: 0;
@@ -117,7 +117,7 @@ $font-secondary: sans-serif;
 
     a.active {
       svg {
-        color: #ffd43b;
+        color: $color-primary;
       }
     }
   }
@@ -143,7 +143,7 @@ $font-secondary: sans-serif;
 
       &:hover {
         .anchor-icon {
-          color: #ffd43b;
+          color: $color-primary;
         }
       }
     }

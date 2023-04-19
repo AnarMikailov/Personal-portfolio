@@ -56,7 +56,6 @@ const Home = () => {
               <button className="btn home__page__link__container-resume ">
                 Resume
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth="1.5"

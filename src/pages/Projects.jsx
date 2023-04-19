@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import AnimateProject from '../components/AnimateProject';
-import AnimatedLetters from '../components/animation/AnimatedLetters';
-import Sidebar from '../components/Sidebar';
-import project from '../data/data';
-import './Projects.scss';
-import RingLoader from 'react-spinners/RingLoader';
+import React, { useEffect, useState } from "react";
+import AnimateProject from "../components/animation/AnimateProject";
+import AnimatedLetters from "../components/animation/AnimatedLetters";
+import Sidebar from "../components/Sidebar";
+import project from "../data/data";
+import "./Projects.scss";
+import RingLoader from "react-spinners/RingLoader";
 const Projects = () => {
   const [loading, setLoading] = useState(false);
   useEffect(() => {
@@ -21,10 +21,10 @@ const Projects = () => {
           loading
           size={60}
           cssOverride={{
-            position: 'absolute',
-            top: '50%',
-            left: '50%',
-            transform: 'translate(-50%, -50%)',
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
           }}
           speedMultiplier={2}
         />

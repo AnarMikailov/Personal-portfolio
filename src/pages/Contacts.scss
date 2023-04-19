@@ -1,3 +1,4 @@
+@import "../components/styles/colors.scss";
 .contact-page {
   display: flex;
   justify-content: center;
@@ -11,10 +12,7 @@
   justify-content: flex-start;
   flex-wrap: wrap;
 }
-.popup {
-  background-color: #8e0e00;
-  font-size: 20px;
-}
+
 .contact__page-map {
   width: 80vh;
 }
@@ -29,8 +27,8 @@
   margin-bottom: 2rem;
   font-size: 22px;
   line-height: 35px;
-  font-family: 'Saira Condensed', sans-serif;
-  color: #ffd43b;
+  font-family: $font-primary, $font-secondary;
+  color: $color-primary;
 }
 .contact__page-form {
   margin-left: 10rem;
@@ -46,18 +44,18 @@ form {
 
 .contact__page-textarea {
   padding: 2rem;
-  background-color: #ffd43b;
+  background-color: $color-primary;
   font-size: 18px;
 }
 .contact__page-name_email_container {
   display: flex;
   gap: 1rem;
   p {
-    color: #ffd43b;
+    color: $color-primary;
   }
 }
 input {
-  background-color: #ffd43b;
+  background-color: $color-primary;
   padding: 1rem;
   font-size: 20px;
 }
@@ -67,7 +65,7 @@ input {
 }
 
 .invalid {
-  border-bottom: 7px solid #8e0e00;
+  border-bottom: 7px solid $color-bg-hover;
   animation: bounceIn 1s 1, 7s backwards;
 }
 
@@ -82,11 +80,8 @@ input {
     margin-bottom: 4rem;
     font-size: 32px;
     line-height: 38px;
-    font-family: 'Saira Condensed', sans-serif;
-    color: #ffd43b;
   }
   input {
-    background-color: #ffd43b;
     padding: 1rem;
     font-size: 20px;
     width: 100%;
@@ -123,16 +118,12 @@ input {
     margin-bottom: 2rem;
     font-size: 22px;
     line-height: 35px;
-    font-family: 'Saira Condensed', sans-serif;
-    color: #ffd43b;
   }
   .contact__page-textarea {
     padding: 1rem;
-    background-color: #ffd43b;
     font-size: 15px;
   }
   input {
-    background-color: #ffd43b;
     padding: 1rem;
     font-size: 16px;
   }
@@ -177,11 +168,8 @@ input {
   }
   .contact__page-title {
     margin-top: 8rem;
-    font-size: 14px;
-    line-height: normal;
   }
   .map {
-    top: 65rem;
     height: 350px;
   }
 }

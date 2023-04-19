@@ -1,31 +1,7 @@
-$bg-main: linear-gradient(180deg, #1f1c18 50%, #8e0e00 100%);
-$color-primary: #ffd43b;
-$color-secondary: #fff3bf;
-$color-btn-text: #1f1c18;
-$color-bg-hover: #8e0e00;
-$font-primary: "Saira Condensed", sans-serif;
-$font-secondary: sans-serif;
+@import "./components/styles/colors.scss";
 @import "animate.css";
 body {
   background: $bg-main;
   height: 100vh;
   background-attachment: fixed;
-}
-@mixin buttoneffect {
-  font-family: $font-primary;
-  font-weight: 600;
-  text-align: center;
-  display: inline-block;
-  position: absolute;
-  left: 10%;
-  top: 60%;
-  padding: 10px;
-  color: $color-btn-text;
-  background-color: $color-secondary;
-  border: none;
-  transition: 0.4s all;
-  &:hover {
-    background-color: $color-bg-hover;
-    color: #fff3bf;
-  }
 }
