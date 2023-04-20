@@ -53,22 +53,27 @@ const Home = () => {
                   Contact
                 </button>
               </Link>
-              <button className="btn home__page__link__container-resume ">
-                Resume
-                <svg
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className=" home__page__link__container-cv_icon"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
-                  />
-                </svg>
-              </button>
+              <Link
+                to="https://acrobat.adobe.com/id/urn:aaid:sc:EU:853b7405-ceee-434d-a2bf-bed3736b0fd3"
+                target="_blank"
+              >
+                <button className="btn home__page__link__container-resume ">
+                  Resume
+                  <svg
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    className=" home__page__link__container-cv_icon"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                    />
+                  </svg>
+                </button>
+              </Link>
             </div>
           </div>
         </>

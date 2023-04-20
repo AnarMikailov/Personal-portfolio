@@ -6,6 +6,7 @@
   align-items: center;
   gap: 8rem;
   animation: fadeIn 0.5s 0.7s backwards;
+  // overflow-x: hidden;
 }
 .skillbar-container {
   gap: 4rem;
@@ -24,7 +25,6 @@
   font-size: 21px;
   color: $color-secondary;
   align-self: center;
-  // animation: backInUp 1.2s 1.4s backwards;
 }
 
 @media screen and (max-width: 1024px) {

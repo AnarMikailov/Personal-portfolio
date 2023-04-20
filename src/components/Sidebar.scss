@@ -1,10 +1,3 @@
-$bg-main: linear-gradient(180deg, #1f1c18 50%, #8e0e00 100%);
-$color-primary: #ffd43b;
-$color-secondary: #fff3bf;
-$color-btn-text: #1f1c18;
-$color-bg-hover: #8e0e00;
-$font-primary: "Saira Condensed", sans-serif;
-$font-secondary: sans-serif;
 @import "../components/styles//colors.scss";
 .nav-bar {
   background: $color-btn-text;
@@ -109,9 +102,18 @@ $font-secondary: sans-serif;
       }
     }
 
-    a.portfolio-link {
+    a.linkedin-link {
+      display: none;
       &:after {
-        content: "PORTFOLIO";
+        font-size: 20px;
+        content: "Linkedin";
+      }
+    }
+    a.github-link {
+      display: none;
+      &:after {
+        font-size: 20px;
+        content: "Github";
       }
     }
 
@@ -185,17 +187,15 @@ $font-secondary: sans-serif;
       }
 
       a {
-        font-size: 4rem;
+        margin-top: 0.4rem;
+        font-size: 3rem;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 5rem;
-        margin: 2rem;
-        &:nth-child(4) {
-          margin-left: 7rem;
-        }
-        &:nth-child(5) {
-          margin-left: 6.8rem;
+        &:nth-child(1) {
+          margin-top: 2rem;
         }
       }
 
@@ -203,7 +203,7 @@ $font-secondary: sans-serif;
         opacity: 1;
         position: initial;
         width: auto;
-        margin-left: 5rem;
+        margin-left: 0rem;
         font-size: 3rem;
       }
 
@@ -216,9 +216,15 @@ $font-secondary: sans-serif;
     .close-icon {
       position: absolute;
       top: 15px;
-      right: 35px;
+      right: 25px;
       display: block;
     }
+  }
+  .linkedin-link {
+    display: block !important;
+  }
+  .github-link {
+    display: block !important;
   }
 }
 @media screen and (max-width: 700px) {
@@ -231,25 +237,12 @@ $font-secondary: sans-serif;
   .nav-bar {
     nav {
       a {
-        font-size: 2.5rem;
+        font-size: 2rem;
         justify-content: flex-start;
         margin: 0;
-        &:nth-child(4) {
-          margin-left: -1rem;
-
-          &::after {
-            font-size: 18px;
-            font-weight: 600;
-          }
-        }
-        &:nth-child(5) {
-          margin-left: 0;
-
-          &::after {
-            font-size: 18px;
-            font-weight: 600;
-          }
-        }
+      }
+      a:after {
+        font-size: 2rem;
       }
     }
 
