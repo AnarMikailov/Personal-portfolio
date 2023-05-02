@@ -8,10 +8,10 @@
   transition: all 1.3s ease-out;
   justify-content: center;
   transform-style: preserve-3d;
-  gap: 5rem;
-  margin-bottom: 10rem;
-  margin-left: 10rem;
-  margin-right: 10rem;
+  // gap: 2rem;
+  // margin-bottom: 10rem;
+  // margin-left: 10rem;
+  // margin-right: 10rem;
 }
 .all-click {
   perspective: 1000px;
@@ -149,7 +149,7 @@
   }
 }
 
-@media screen and (max-width: 924px) {
+@media screen and (max-width: 954px) {
   .center {
     order: -1;
   }

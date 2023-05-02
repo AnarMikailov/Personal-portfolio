@@ -22,14 +22,14 @@ import { Link, NavLink } from "react-router-dom";
 const Sidebar = () => {
   const [showNav, setShowNav] = useState(false);
   const handleDownload = () => {
-    fetch("Resume.pdf").then((response) => {
+    fetch("ResumeM.pdf").then((response) => {
       response.blob().then((blob) => {
         // Creating new object of PDF file
         const fileURL = window.URL.createObjectURL(blob);
         // Setting various property values
         let alink = document.createElement("a");
         alink.href = fileURL;
-        alink.download = "Resume.pdf";
+        alink.download = "ResumeM.pdf";
         alink.click();
       });
     });
